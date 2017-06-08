@@ -8,3 +8,4 @@
 
 // Директории
 define('DIR_APPLICATION', 'C:/OpenServer/domains/framework.cms/www/public/'); // Пользовательские файлы
+define('DIR_SYSTEM', 'C:/OpenServer/domains/framework.cms/www/system/'); // Системные файлы
