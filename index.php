@@ -11,3 +11,5 @@ if (is_file('config.php')) require_once('config.php');
 
 // Подключаем системные файлы
 require_once(DIR_SYSTEM . 'startup.php');
+// Стартуем проект
+start('public');
