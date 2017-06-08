@@ -9,6 +9,9 @@
 // Следим за всеми ошибками
 error_reporting(E_ALL);
 
+// Версия PHP
+if (version_compare(phpversion(), '7.0.0', '<')) exit('Необходим PHP 7 или выше!');
+
 // Стартуем проект
 function start($application_config) {
 
