@@ -12,6 +12,9 @@ error_reporting(E_ALL);
 // Версия PHP
 if (version_compare(phpversion(), '7.0.0', '<')) exit('Необходим PHP 7 или выше!');
 
+// Движок
+require_once(modification(DIR_SYSTEM . 'engine/registry.php'));
+
 // Стартуем проект
 function start($application_config) {
     // Инициализация классов фреймворка
