@@ -14,5 +14,6 @@ if (version_compare(phpversion(), '7.0.0', '<')) exit('Необходим PHP 7 
 
 // Стартуем проект
 function start($application_config) {
-
+    // Инициализация классов фреймворка
+    require_once(DIR_SYSTEM . 'framework.php');
 }
