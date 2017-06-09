@@ -33,6 +33,17 @@ function modification($filename) {
     return $filename;
 }
 
+// Загрузка сторонних классов
+function library($class) {
+    $file = DIR_SYSTEM . 'library/' . str_replace('\\', '/', strtolower($class)) . '.php';
+    if (is_file($file)) {
+        include_once(modification($file));
+        return true;
+    } else return false;
+}
+spl_autoload_register('library');
+spl_autoload_extensions('.php');
+
 // Движок
 require_once(modification(DIR_SYSTEM . 'engine/registry.php'));
 
